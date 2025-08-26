@@ -109,7 +109,7 @@ main > .desc > a {
 .desc {
   margin: 5em 1em 1em 1em;
   padding: 1em;
-  gap: .5em;
+  gap: 0.5em;
   display: flex;
   flex-direction: column;
   color: white;
@@ -125,6 +125,12 @@ main > .desc > a {
   to {
     color: #eb3678;
   }
+}
+body > h1 {
+  color: cyan;
+  text-shadow: 0 0 10px white;
+  text-align: center;
+  margin: 1em;
 }
 .experience {
   display: grid;
@@ -189,18 +195,49 @@ main > .desc > a {
 .web {
   background: #a8a5dd;
   border-radius: 1em;
-  padding: 1em;
+  padding: 0.5em;
   margin: 1em;
   display: grid;
   grid-template-columns: repeat(3, 30%);
   align-items: center;
   justify-items: center;
   justify-content: center;
-  gap: 0.5em;
   /* place-items: center; */
 }
+.achievment > h1 {
+  text-align: center;
+  margin: 1em;
+  color: cyan;
+  text-shadow: 0 0 15px;
+}
+.containerAchi {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  margin: 1em;
+  gap: 0.5em;
+}
+.containerAchi > .achi {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  background: var(--lightblue);
+  border: 1px solid white;
+  border-radius: .5em;
+  align-items: center;
+}
+.achi > p {
+  font-weight: 600;
+  margin: .5em;
+  text-align: center;
+  font-size: .8rem;
+}
+.containerAchi > .achi > img {
+  transition: 1s ease;
+  border-radius: 0.5em;
+  width: 100%;
+}
 .web > img {
-  width: 70%;
+  width: 55%;
   border-radius: 1em;
 }
 .second {
@@ -221,16 +258,16 @@ main > .desc > a {
   justify-items: center;
 }
 .pentest > .bs {
-  width: 120%;
+  width: 100%;
 }
 .pentest > .nmap {
-  width: 120%;
+  width: 100%;
 }
 .pentest > .hydra {
-  width: 100%;
+  width: 80%;
 }
 .pentest > .docker {
-  width: 100%;
+  width: 80%;
 }
 .etc {
   background: #a8a5dd;
@@ -244,10 +281,10 @@ main > .desc > a {
   justify-items: center;
 }
 .etc > img {
-  width: 60%;
+  width: 50%;
 }
 .pentest > img {
-  width: 70%;
+  width: 50%;
   border-radius: 1em;
 }
 .contact {
@@ -428,5 +465,19 @@ footer {
   }
   .pentest > .lm {
     width: 50%;
+  }
+  .containerAchi > .achi{
+    padding: 1em;
+  }
+  .containerAchi {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+  }
+  .containerAchi > .achi > img{
+    width: 75%;
+  }
+  .containerAchi > .achi > img:hover {
+    box-shadow: 0 0 20px black;
   }
 }
